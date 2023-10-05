@@ -1,0 +1,199 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(./img/Fondo\ .jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 0 7%;
+    }
+
+    .bloque1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 10%;
+        position: relative;
+        padding: 5%;
+        background-color: white;
+        box-shadow: -15px 15px 15px gray;
+        border-radius: 20px;
+
+
+
+    }
+
+    .bloque2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 100px 100px 100px 20px;
+        gap: 30px;
+        padding: 0 5%;
+        border-radius: 20px;
+    }
+
+    .año {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .año h1 {
+        color: rgb(92, 90, 90);
+        font-family: "Tahoma, sans-serif";
+        font-size: 60px;
+        letter-spacing: 0.3em;
+        z-index: 100;
+        font-weight: 300;
+    }
+
+    .imagen {
+        width: 80%;
+        height: auto;
+        filter: brightness(0.9);
+        z-index: 99;
+
+    }
+
+    .nombre {
+        margin-top: 80px;
+
+    }
+
+    .nombre h1 {
+        color: white;
+        font-size: 20px;
+        font-weight: 200
+    }
+
+
+    .informacion {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .color_rosado {
+        background-color: #f8eae8;
+        width: 100%;
+        height: 500px;
+    }
+
+    .color_gris {
+        background-color: grey;
+        width: 100%;
+        height: 200px;
+    }
+
+    .portafolio h2 {
+        position: absolute;
+        color: rgb(92, 90, 90);
+        font-family: "Tahoma, sans-serif";
+        font-size: 60px;
+        top: 52%;
+
+        z-index: 100;
+        font-weight: 500;
+        /* display: flex; */
+
+    }
+
+    .portafolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+
+    }
+
+    .cuadro {
+        background-color: white;
+        height: 330px;
+        box-shadow: -15px 15px 15px gray;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+
+    .tarjeta {
+        background-color: #f8eae8;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logos {
+        height: 200px;
+        width: auto;
+    }
+
+
+    @media(max-width: 1660px) {
+        .año h1 {
+            font-size: 55px;
+
+        }
+
+        .bloque2 {
+            gap: 60px;
+            margin-left: 100px;
+        }
+
+        .cuadro {
+
+            height: 330px;
+
+
+        }
+    }
+
+    @media(max-width: 1650px) {
+        .contenedor {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media(max-width: 600px) {
+        .imagen {
+            width: 60%;
+        }
+
+        .color_rosado{
+            height: 350px;
+        }
+
+        .color_gris{
+            height: 100px;
+        }
+
+        .año h1{
+            font-size: 30px;
+        }
+
+        .bloque2{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
