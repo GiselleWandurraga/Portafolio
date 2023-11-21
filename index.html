@@ -6,76 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./estilos.css">
+    <script src="./javaScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+    <div class="barra_fija">
+        <div class="nombre">
+            <h1 class="nombre_pag" href="">BOHEMIAN BLISS</h1>
+        </div>
+        <div class="sesion_carrito">
+            <i class="fa-solid fa-cart-plus" style="color: #f1867a;" onclick="abrirCarrito()"></i>
+        </div>
+    </div>
     <div class="contenedor">
-        <div class="bloque1">
-            <div class="color_rosado"></div>
-            <div class="color_gris"></div>
-            <div class="informacion">
-                <div class="año">
-                    <h1>PORTAFOLIO</h1>
-                </div>
-                <div class="portafolio">
-                    <h2>2023</h2>
-                    <img class="imagen" src="./Logo.jpg" alt="imagen">
-
-                </div>
-                <div class="nombre">
-                    <h1>Giselle Daniela Wandurraga Galvis</h1>
-                </div>
-
+        <div class="cont_1">
+            <div class="imgc1"></div>
+            <div class="img2c1"></div>
+        </div>
+        <div class="intermedio">
+            <div class="bloq_prom">
+                <p class="promocion">¡Nuevos Productos Cada Semana!</p>
+            </div>
+            <div class="bloq_prom">
+                <p class="promocion">Envíos gratis</p>
+            </div>
+            <div class="bloq_prom">
+                <p class="promocion">¡Super descuentos!</p>
             </div>
         </div>
-        <div class="bloque2">
-            <div class="quien_soy cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Pagina/">
-                        <img class="logos" src="./persona.png" alt="imagen">
-                </a>
-                </div>
-            </div>
-            <div class="factura cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Factura/">
-                    <img class="logos" src="./factura.png" alt="imagen">
-                </a>
-                </div>
-            </div>
-            <div class="calendario cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Calendario/">
-                    <img class="logos" src="./calendario.png" alt="imagen">
-                </a>
-                </div>
-            </div>
-            <div class="formulario cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Formulario/">
-                        <img class="logos" src="./formulario.png" alt="imagen">
-                    </a>
+        <div class="cards" id="cards">
+        </div>
+        <div id="modal" class="cerrar_carrito">
+            <div class="cont_carrito">
+                <span class="close" onclick="cerrarCarrito()">&times;</span>
+                <div id="carrito-container" class="carrito_container">
+                    <div id="productos-container">
+                        <div class="divtabla">
+                            <table class="tg"">
+                                <thead>
+                                  <tr>
+                                    <th class=" tg-0r6n">Imagen</th>
+                                <th class="tg-0r6n">Nombre</th>
+                                <th class="tg-0r6n">Precio</th>
+                                <th class="tg-0r6n">Cantidad</th>
+                                <th class="tg-0r6n">Subtotal</th>
+                                <th class="tg-0r6n">Eliminar</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tabla">
 
-                </div>
-            </div>
-            <div class="presupuesto cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Presupuesto/">
-                        <img class="logos" src="./presupuesto.png" alt="imagen">
-                    </a>
-
-                </div>
-            </div>
-            <div class="carrito cuadro">
-                <div class="tarjeta">
-                    <a href="https://gisellewandurraga.github.io/Carrito-de-compras/">
-                        <img class="logos" src="./carrito.png" alt="imagen">
-                    </a>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="total_compra">
+                        <h1 class="text_total">Total de la compra </h1>
+                        <h1 class="total" id="tot"></h1>
+                    </div>
+                    <div class="vaciar">
+                        <button class="vaciar_carrito" onclick="vaciarCarrito()">Vaciar Carrito</button></div>
                 </div>
             </div>
         </div>
-
-
     </div>
 </body>
 
